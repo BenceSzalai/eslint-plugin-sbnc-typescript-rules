@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-sbnc-typescript-rules",
   "version": "0.1.0",
-  "description": "An ESLint plugin for customised linting rules for TypeScript",
+  "description": "An ESLint plugin with customised linting rules for TypeScript",
   "homepage": "https://github.com/BenceSzalai/eslint-plugin-sbnc-typescript-rules#readme",
   "keywords": [
     "eslint",
