@@ -1,0 +1,71 @@
+{
+  "name": "eslint-plugin-sbnc-typescript-rules",
+  "version": "0.1.0",
+  "description": "An ESLint plugin for customised linting rules for TypeScript",
+  "homepage": "https://github.com/BenceSzalai/eslint-plugin-sbnc-typescript-rules#readme",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "eslint-rules",
+    "typescript",
+    "typescript-eslint"
+  ],
+  "author": {
+    "name": "Bence Szalai",
+    "email": "bence@sbnc.eu",
+    "url": "https://sbnc.eu/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenceSzalai/eslint-plugin-sbnc-typescript-rules.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BenceSzalai/eslint-plugin-sbnc-typescript-rules/issues"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -Rf ./dist/",
+    "build:ci": "npm run build",
+    "build": "npm run clean && mkdir ./dist && tsc --project tsconfig.build.json",
+    "lint": "npx eslint -c .eslintrc.js --ext .ts './src/**/*.ts' './tests/**/*.ts' --no-error-on-unmatched-pattern",
+    "test": "export NODE_OPTIONS=\"--max-old-space-size=8192\" && npx jest --runInBand --colors --reporters=default --no-cache --coverage=false --silent=false -c jest.config.ts",
+    "pre-commit": "npx lint-staged"
+  },
+  "dependencies": {
+    "@typescript-eslint/utils": "^5.59.1"
+  },
+  "devDependencies": {
+    "@types/eslint": "8.37.0",
+    "@types/jest": "29.5.1",
+    "@types/node": "18.16.0",
+    "@typescript-eslint/eslint-plugin": "5.59.1",
+    "@typescript-eslint/parser": "5.59.1",
+    "class-validator": "^0.14",
+    "eslint": "8.39.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsdoc": "43.1.1",
+    "eslint-plugin-prefer-arrow": "1.2.3",
+    "eslint-plugin-unicorn": "46.0.0",
+    "jest": "29.5.0",
+    "jest-create-mock-instance": "2.0.0",
+    "jest-junit": "16.0.0",
+    "lint-staged": "13.2.1",
+    "ts-jest": "29.1.0",
+    "ts-node": "10.9.1",
+    "typescript": "4.8.4"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/parser": "^5.0.0",
+    "class-validator": "*",
+    "eslint": "^8.0.0"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "*.ts": "eslint --cache --fix"
+  }
+}

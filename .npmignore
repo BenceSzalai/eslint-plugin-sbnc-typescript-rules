@@ -1,0 +1,10 @@
+.DS_Store
+.env
+.npmrc
+.npm/
+.rpt2_cache
+coverage/
+node_modules/
+yarn-error.log
+src/
+.jest_cache
