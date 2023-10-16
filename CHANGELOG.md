@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 (nothing right now)
 
+## [0.2.1] - 2022-10-16
+### Fixed
+- Added missing dependency `@typescript-eslint/utils`.
+
 ## [0.2.0] - 2022-10-16
 ### Updated
 - Updated rule source to match changes in `typescript-eslint/typescript-eslint` `v6`
@@ -18,7 +22,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - ESLint plugin base code (based on `typescript-eslint/typescript-eslint` `v5`)
 - A rule with extended options: `type-annotation-spacing`
 
-[Unreleased]: https://github.com/BenceSzalai/eslint-plugin-sbnc-rules/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/BenceSzalai/eslint-plugin-sbnc-rules/compare/v0.2.1...HEAD
+[0.2.1]: https://github.com/BenceSzalai/eslint-plugin-sbnc-rules/releases/tag/v0.2.1
 [0.2.0]: https://github.com/BenceSzalai/eslint-plugin-sbnc-rules/releases/tag/v0.2.0
 [0.1.0]: https://github.com/BenceSzalai/eslint-plugin-sbnc-rules/releases/tag/v0.1.0
 
