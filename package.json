@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-sbnc-typescript-rules",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "An ESLint plugin with customised linting rules for TypeScript",
   "homepage": "https://github.com/BenceSzalai/eslint-plugin-sbnc-typescript-rules#readme",
   "keywords": [
@@ -32,22 +32,16 @@
     "test": "export NODE_OPTIONS=\"--max-old-space-size=8192\" && npx jest --runInBand --colors --reporters=default --no-cache --coverage=false --silent=false -c jest.config.ts",
     "pre-commit": "npx lint-staged"
   },
-  "dependencies": {
-    "@typescript-eslint/utils": "^5.59.1"
-  },
   "devDependencies": {
     "@types/eslint": "8.37.0",
     "@types/jest": "29.5.1",
     "@types/node": "18.16.0",
-    "@typescript-eslint/eslint-plugin": "5.59.1",
-    "@typescript-eslint/parser": "5.59.1",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "@typescript-eslint/rule-tester": "^6.7.5",
+    "@typescript-eslint/utils": "^6.7.5",
     "class-validator": "^0.14",
     "eslint": "8.39.0",
-    "eslint-config-prettier": "8.8.0",
-    "eslint-plugin-import": "2.27.5",
-    "eslint-plugin-jsdoc": "43.1.1",
-    "eslint-plugin-prefer-arrow": "1.2.3",
-    "eslint-plugin-unicorn": "46.0.0",
     "jest": "29.5.0",
     "jest-create-mock-instance": "2.0.0",
     "jest-junit": "16.0.0",
@@ -57,7 +51,7 @@
     "typescript": "4.8.4"
   },
   "peerDependencies": {
-    "@typescript-eslint/parser": "^5.0.0",
+    "@typescript-eslint/parser": "^6.7.5",
     "class-validator": "*",
     "eslint": "^8.0.0"
   },
